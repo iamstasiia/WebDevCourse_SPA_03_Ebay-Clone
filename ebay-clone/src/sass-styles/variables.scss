@@ -1,0 +1,22 @@
+// font-family: 'Manrope', sans-serif;
+@import url(https://fonts.bunny.net/css?family=manrope:600);
+// font-family: 'Poppins', sans-serif;
+@import url(https://fonts.bunny.net/css?family=poppins:300,400,500,600,700);
+
+$light-gray: #F3F3F3;
+$shadow: #E3E3E3;
+$accent: #373DD6;
+$light-accent: #DEEDFD;
+$light-text: #655678;
+$text: #331B4C;
+$yellow: #F0D338;
+
+.accent-stl {
+    background: $accent;
+    color: $light-accent;
+}
+
+.light-accent-stl {
+    background: $light-accent;
+    color: $accent;
+}

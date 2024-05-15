@@ -1,0 +1,129 @@
+@import './variables.scss';
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;  
+    box-shadow: 0 -0.5rem 2rem $shadow;
+    border-radius: 4rem;
+    padding: 0.5rem 2rem;
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 3rem;
+    letter-spacing: -0.3rem;
+    transform: scaleY(0.8);
+    color: #F2002D;
+    margin-top: -1rem;
+
+    span:nth-child(1) {
+        color: #373DD6;
+    }
+    span:nth-child(2) {
+        color: #F7B600;
+    }
+    span:nth-child(3) {
+        color: #6CC901;
+    }
+}
+
+.search {
+    background: $light-gray;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+
+    select, input {
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.75rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    select {
+        font-weight: 600;
+        color: $text;
+        margin-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+
+    input {
+        border-left: 1px solid $light-text;
+        padding: 0 0.75rem;
+        width: 15rem;
+    }
+
+    button {
+        padding: 0.5rem 0.75rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        font-size: 1.2rem;
+    }
+}
+
+.wishlist, .my__cart {
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    div {
+        position: relative;
+
+        div {
+            font-size: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            text-align: center;
+            border: 2px solid white;
+            position: absolute;
+            top: -0.3rem;
+            right: 0.1rem;
+        }
+    }
+
+    i {
+        font-size: 1.25rem;
+        margin-right: .5rem;
+    }
+
+    small {
+        color: $accent;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+    select {
+        font-weight: 700;
+    }
+
+    img {
+        width: 2.25rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.all-categories {
+    font-size: 0.75rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    i {
+        font-size: 1rem;
+        margin-right: 0.75rem;
+    }
+}
